@@ -8,9 +8,9 @@ import threading
 import time
 
 
-API_KEY="tsFTzdLSsPUW"
-PROJECT_TOKEN="tx4Z4o2ZpWUe"
-RUN_TOKEN="tN4Jyte8QX14"
+API_KEY="YOUR_API_KEY"
+PROJECT_TOKEN="YOUR_PROJECT_TOKEN"
+RUN_TOKEN="YOUR_RUN_TOKEN"
 
 response = requests.get(f'https://parsehub.com/api/v2/projects/{PROJECT_TOKEN}/last_ready_run/data', params={"api_key": API_KEY})
 data = json.loads(response.text)
